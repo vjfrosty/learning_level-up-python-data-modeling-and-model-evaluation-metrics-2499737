@@ -8,7 +8,7 @@ import xgboost as xgb
 
 
 X_train_scaled, X_test_scaled, y_train, y_test = load(
-  '/workspaces/level-up-python-data-modeling-and-model-evaluation-metrics-2499737/data/model_data.joblib'
+  'data/model_data.joblib'
   )
 
 xgb_model = xgb.XGBClassifier()
@@ -40,7 +40,7 @@ predictions = xgb_search.predict(X_test_scaled)
 
 dump(
   xgb_search, 
-  '/workspaces/level-up-python-data-modeling-and-model-evaluation-metrics-2499737/data/xgboost_model.joblib'
+  'data/xgboost_model.joblib'
   )
 
 balanced_accuracy_score(y_test, predictions)
