@@ -9,6 +9,7 @@ def install(package):
 
 
 """ # Install packages
+install('matplotlib')
 install('imblearn')
 install('joblib')
 install('pandas')
