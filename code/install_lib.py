@@ -18,7 +18,8 @@ install('shap')
 install('scikit-learn')
 install('xgboost') """
 
-
+# Install matplotlib
+install('matplotlib')
 # Add site-packages to Python path
 #sys.path.append(expanduser("~/.local/lib/python3.10/site-packages"))
 sys.path.append(expanduser("/home/vscode/.local/lib/python3.10/site-packages"))

@@ -1,0 +1,10 @@
+pip install joblib
+pip install numpy
+pip install shap
+pip install scikit-learn
+pip install xgboost
+pip install pandas
+pip install imblearn
+pip install matplotlib
+
+
