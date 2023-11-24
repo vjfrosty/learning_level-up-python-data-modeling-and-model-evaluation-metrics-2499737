@@ -8,9 +8,15 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from collections import Counter
+from imblearn.over_sampling import SMOTE
+from imblearn.combine import SMOTEENN, SMOTETomek
+import numpy as np
+import pandas as pd
 
+data/level_up_data.csv
 work_data = pd.read_csv(
-  "/workspaces/level-up-python-data-modeling-and-model-evaluation-metrics-2499737/data/level_up_data.csv"
+  "data/level_up_data.csv"
   )
 
 work_data = work_data.sample(frac = .1)
@@ -47,5 +53,5 @@ X_test_scaled = X_test_scaler.transform(X_test)
 
 dump(
   [X_train_scaled, X_test_scaled, y_train, y_test], 
-  '/workspaces/level-up-python-data-modeling-and-model-evaluation-metrics-2499737/data/model_data.joblib'
+  'data/model_data.joblib'
   )
